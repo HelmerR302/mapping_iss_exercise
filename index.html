@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.1.2/dist/chart.umd.min.js"></script>
+
+    <!-- import leaflet map library -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <style>
+      #iss-map {
+        height: 400px;
+      }
+    </style>
+    <!-- --------------------------- -->
+
+    <title>🦾 Data & API in JS</title>
+  </head>
+  <body>
+    <h1>Client-side exercise</h1>
+    <h2>I. Fetch from local files</h2>
+    <img src="" id="rainbow" width="200px" />
+    <hr />
+    <br />
+
+    <h2>II. Parsing csv file & graphing data with chart.js</h2>
+    <p>
+      This is a line chart shows temperature anomalies from 1980 to 2021
+      (Deviations from the corresponding 1951-1980 means).
+    </p>
+    <div width="800px">
+      <canvas id="chart"></canvas>
+    </div>
+    <hr />
+    <br />
+
+    <h2>III. Fetch JSON data from API</h2>
+
+    <p>
+      <b>Task:</b> <br />Get data from 'where the ISS at' and point it on the
+      map with leaflet library
+    </p>
+    <h4>ISS coordination is: <span class="cor"></span></h4>
+    <div id="iss-map"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
