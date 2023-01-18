@@ -121,4 +121,4 @@ async function getIssApi() {
 }
 
 getIssApi(); // Call function when the page loads, setInterval will wait 1500ms to call
-setInterval(getIssApi, 1500);
+setInterval(getIssApi, 1000);
