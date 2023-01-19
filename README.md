@@ -19,4 +19,3 @@ Presenting real-time position of the ISS on the map:
 - HTML
 - Javascript
 - API
-- Node.js
